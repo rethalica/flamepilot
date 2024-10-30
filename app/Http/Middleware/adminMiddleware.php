@@ -24,7 +24,7 @@ class adminMiddleware
             }
 
             // Jika user bukan admin, redirect ke halaman lain
-            return to_route('dashboard')->with('error', 'You do not have admin access');
+            return redirect('/')->with('error', 'You do not have admin access.');
         }
 
 
